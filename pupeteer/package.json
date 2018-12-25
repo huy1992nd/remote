@@ -1,0 +1,42 @@
+{
+  "name": "APP_MONITOR",
+  "version": "0.0.1",
+  "description": "app manager export log and show notification for bpex system",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "rimraf ./../web/dist && npm run webpack -- --config './../web/config/webpack.dev.js' --mode development --progress --profile --trace-deprecation node index.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.11",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "chatwork-client": "^1.0.11",
+    "config": "^2.0.1",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.3.0",
+    "jszip": "^3.1.5",
+    "log": "^1.4.0",
+    "log4js": "^3.0.5",
+    "mongodb": "^3.1.4",
+    "mongoose": "^5.2.10",
+    "mysql": "^2.16.0",
+    "node-cron": "^1.2.1",
+    "node-ssh-exec": "^0.1.1",
+    "node-zip": "^1.1.1",
+    "nodemailer": "^4.6.8",
+    "path": "^0.12.7",
+    "puppeteer": "^1.11.0",
+    "socket.io": "^2.1.1",
+    "ssh2": "^0.6.1",
+    "xlsx-template": "^0.4.0",
+    "zip-folder": "^1.0.0"
+  }
+}
